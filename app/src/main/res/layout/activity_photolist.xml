@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/txt_light"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear1">
+        <TextView
+            android:id="@+id/shop_photo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="Shop Photo"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/shop_img"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:onClick="onClickImg"
+            android:src="@mipmap/empty_image"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="2">
+            <ImageView
+                android:id="@+id/add_shop"
+                android:onClick="onClickImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:padding="15dp"
+                android:background="@mipmap/cam_one"/></LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/separator"
+
+        android:layout_alignBottom="@+id/linear1"
+        android:background="@color/colorAccent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear2">
+        <TextView
+            android:id="@+id/slip_photo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="Sales Slip Photo"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/slip_img"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:onClick="onClickImg"
+            android:src="@mipmap/empty_image"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="2">
+            <ImageView
+                android:id="@+id/add_slip"
+                android:onClick="onClickImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:padding="15dp"
+                android:background="@mipmap/cam_one"/></LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="@dimen/add_btn"
+        android:layout_height="@dimen/add_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="onClickImg"
+        android:src="@drawable/ic_next_selector"/>
+
+
+</RelativeLayout>

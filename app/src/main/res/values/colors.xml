@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#db3236</color>
+    <color name="colorPrimaryDark">#be0000</color>
+    <color name="colorAccent">#757575</color>
+    <color name="purchase">#02b684</color>
+    <color name="haatsummary">#070F61</color>
+    <color name="colorLight">#f5f5f5</color>
+    <color name="primary_txt_color">#FFFBFD</color>
+    <color name="btn_disabled">#A0A0A0</color>
+    <color name="txt_light">#FFFFFF</color>
+    <color name="btn_pressed">#B3BBE7</color>
+    <color name="details_txt">#2e2015</color>
+    <color name="pending_start">#FFFCDEA6</color>
+    <color name="pending_haat">#FFB9BFFF</color>
+    <color name="pending_stockist">#bafae9</color>
+    <color name="pending_retailer">#FFFFC3C4</color>
+    <color name="separator">#7e7e7e</color>
+    <color name="brand">#d3d3d3</color>
+    <color name="status_inprogress">#84bff4</color>
+    <color name="status_closed">#afec68</color>
+    <color name="status_open">#fdc354</color>
+    <color name="list_txt">#545454</color>
+    <color name="black">#000000</color>
+    <color name="tabsScrollColor">#8a140e</color>
+
+
+</resources>
+

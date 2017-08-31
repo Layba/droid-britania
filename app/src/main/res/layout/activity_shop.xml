@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/txt_light"
+    android:padding="10dp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shop_name"
+            style="@style/details_txt_bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:id="@+id/shop_name"
+            style="@style/details_txt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/owner_name"
+            style="@style/details_txt_bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:id="@+id/owner_name"
+            style="@style/details_txt"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_no"
+                style="@style/details_txt_bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/details_txt"
+                android:id="@+id/mobEdit"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:layout_marginRight="10dp"
+                android:digits="1234567890"
+                android:layout_gravity="center"
+                android:layout_weight="4.8"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height"
+                android:text="Call"
+                android:onClick="onClickBtn"
+                android:id="@+id/call_mob"
+                android:layout_gravity="start"
+                style="@style/btn_default"
+                android:layout_weight="2.1" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="@dimen/btn_height"
+                android:text="@string/verify"
+                android:onClick="onClickBtn"
+                android:id="@+id/verify_mob"
+                android:layout_gravity="start"
+                style="@style/btn_default"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="2.3" />
+            <ImageView
+                android:layout_width="0dp"
+                android:id="@+id/verify_img_mob"
+                android:layout_gravity="start"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:src="@mipmap/unverified"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        android:id="@+id/village_field">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/village"
+            android:id="@+id/village_heading"
+            style="@style/details_txt_bold"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            style="@style/details_txt"
+            android:inputType="textCapWords"
+            android:id="@+id/village_name" />
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="@dimen/add_btn"
+        android:layout_height="@dimen/add_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        android:onClick="onClickBtn"
+        android:src="@drawable/ic_next_selector"/>
+
+</RelativeLayout>

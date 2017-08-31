@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:background="@color/txt_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/txt_light"
+
+        android:id="@+id/linear_search"
+
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <AutoCompleteTextView
+            android:id="@+id/search_shop"
+            android:layout_weight="6"
+            android:layout_marginLeft="6dp"
+            android:inputType="textCapWords"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:hint="@string/search_shop"/>
+
+        <ImageView
+            android:layout_alignBottom="@+id/search_shop"
+            android:layout_alignParentRight="true"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:id="@+id/search"
+            android:src="@mipmap/search_img"/>
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_marginTop="1dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_search"
+        android:id="@+id/list_view"
+        android:divider="@color/txt_light"
+        android:dividerHeight="3dp"></ListView>
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="@dimen/add_btn"
+        android:layout_height="@dimen/add_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:onClick="addShop"
+        android:src="@drawable/ic_add_selector"/>
+
+</RelativeLayout>

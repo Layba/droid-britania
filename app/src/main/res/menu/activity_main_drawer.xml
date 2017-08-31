@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/startgrp"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/startday"
+            android:title="Start Your Day"
+            android:icon="@mipmap/timer"/>
+    </group>
+    <group
+        android:id="@+id/nav_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/upload_pending"
+            android:title="Pending Uploads"
+            android:icon="@drawable/upload"/>
+        </group>
+    <group
+        android:id="@+id/purchasegrp"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/purchase"
+            android:title="Purchase"
+            android:icon="@drawable/purchase_books"/>
+    </group>
+    <group
+        android:id="@+id/log"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/send_log"
+            android:title="Send Logs"
+            android:icon="@drawable/send_message_button"/>
+    </group>
+    <group
+        android:id="@+id/syncgrp"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/sync"
+            android:title="Sync"
+            android:icon="@drawable/refresh_icon"/>
+    </group>
+
+    <group
+        android:id="@+id/historygrp"
+        android:checkableBehavior="single"
+        android:visible="true">
+
+        <item
+            android:id="@+id/history"
+            android:title="History"
+            android:icon="@drawable/salelist"/>
+    </group>
+
+    <group
+        android:id="@+id/callSupportgrp"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/callSupport"
+            android:title="Contact Helpdesk"
+            android:icon="@drawable/call"/>
+    </group>
+
+    <group
+        android:id="@+id/logoutgrp"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/on_button"/>
+    </group>
+
+    <group
+        android:id="@+id/logoutgrpa"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/logoutq"
+            android:title=" "
+            android:icon="@android:color/transparent"/>
+    </group>
+
+
+</menu>

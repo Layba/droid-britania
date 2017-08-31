@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/txt_light"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/buttons">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linear1">
+                    <TextView
+                        android:id="@+id/shop_photo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:text="Haat Photo 1"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"/>
+                    <ImageView
+                        android:adjustViewBounds="true"
+                        android:id="@+id/shop_img"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight="3"
+                        android:layout_gravity="center"
+                        android:onClick="onClickImg"
+                        android:src="@mipmap/empty_image"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_weight="2">
+                        <ImageView
+                            android:id="@+id/add_shop"
+                            android:onClick="onClickImg"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:padding="15dp"
+                            android:background="@mipmap/cam_one"/>
+
+                </LinearLayout>
+        </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/separator"
+
+                    android:layout_alignBottom="@+id/linear1"
+                    android:background="@color/colorAccent" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/linear2">
+                    <TextView
+                        android:id="@+id/slip_photo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:text="Haat Photo 2"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAccent"
+                        android:gravity="center"/>
+                    <ImageView
+                        android:adjustViewBounds="true"
+                        android:id="@+id/slip_img"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp"
+                        android:layout_weight="3"
+                        android:layout_gravity="center"
+                        android:onClick="onClickImg"
+                        android:src="@mipmap/empty_image"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_weight="2">
+                        <ImageView
+                            android:id="@+id/add_slip"
+                            android:onClick="onClickImg"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:padding="15dp"
+                            android:background="@mipmap/cam_one"/></LinearLayout>
+            </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/separator3"
+        android:layout_alignBottom="@+id/linear1"
+        android:background="@color/colorAccent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="Haat Photo 3"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/slip_img_3"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:onClick="onClickImg"
+            android:src="@mipmap/empty_image"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="2">
+            <ImageView
+                android:id="@+id/add_slip_3"
+                android:onClick="onClickImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:padding="15dp"
+                android:background="@mipmap/cam_one"/>
+</LinearLayout>
+        </LinearLayout>
+
+<View
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:id="@+id/separator4"
+
+android:layout_alignBottom="@+id/linear1"
+android:background="@color/colorAccent" />
+
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginTop="10dp"
+android:id="@+id/linea4">
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="5"
+    android:text="Haat Photo 4"
+    android:textSize="18dp"
+    android:textStyle="bold"
+    android:textColor="@color/colorAccent"
+    android:gravity="center"/>
+<ImageView
+    android:adjustViewBounds="true"
+    android:id="@+id/slip_img_4"
+    android:layout_width="0dp"
+    android:layout_height="55dp"
+    android:layout_weight="3"
+    android:layout_gravity="center"
+    android:onClick="onClickImg"
+    android:src="@mipmap/empty_image"
+    android:layout_marginBottom="3dp"
+    android:layout_marginTop="3dp"/>
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_weight="2">
+    <ImageView
+        android:id="@+id/add_slip_4"
+        android:onClick="onClickImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:padding="15dp"
+        android:background="@mipmap/cam_one"/>
+
+
+</LinearLayout>
+
+</LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/buttons"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/upload_photo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center"
+                android:text="@string/save"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="onClickImg"
+                style="@style/blue_btn_default" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

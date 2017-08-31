@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/txt_light"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/buttons">
+        <LinearLayout
+            android:id="@+id/total_main"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:id="@+id/main"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/columns"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="11">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_weight="5"
+                        style="@style/details_txt_bold"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/available"
+                        android:gravity="bottom|center_horizontal"
+                        android:layout_weight="2.66"
+                        style="@style/details_txt_bold_list"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sp"
+                        android:gravity="bottom|center_horizontal"
+                        android:layout_weight="1.66"
+                        style="@style/details_txt_bold_list"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/qty"
+                        android:layout_weight="1.66"
+                        android:gravity="bottom|center_horizontal"
+                        android:textAlignment="center"
+                        style="@style/details_txt_bold_list"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/total_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/columns"
+                android:layout_marginTop="5dp">
+                <include layout="@layout/vertical_line">
+                </include>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        style="@style/details_txt_bold"
+                        android:textSize="18sp"
+                        android:layout_weight="6.5"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:text="Total"/>
+
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="0dp"
+                        style="@style/details_txt_bold"
+                        android:textSize="18sp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center|right"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4.5"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/buttons"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center"
+                android:text="@string/save_upload"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="onSaveUpdate"
+                style="@style/blue_btn_default" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

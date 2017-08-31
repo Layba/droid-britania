@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/day_start_history"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Day Start History"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible"
+        android:onClick="onClick"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        style="@style/btn_default"/>
+
+    <Button
+        android:id="@+id/retailer_history"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Retailer Sale History"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible"
+        android:onClick="onClick"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        style="@style/btn_default"/>
+
+    <Button
+        android:id="@+id/haat_history"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Haat Sale History"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible"
+        android:onClick="onClick"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        style="@style/btn_default"/>
+
+    <Button
+        android:id="@+id/purchase_history"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Purchase History"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible"
+        android:onClick="onClick"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        style="@style/btn_default"/>
+
+</LinearLayout>

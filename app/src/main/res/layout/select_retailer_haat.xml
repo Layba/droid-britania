@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/vilName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/haatsummary"
+        android:textSize="14sp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorLight"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/AddRetailer"
+        android:layout_marginTop="50dp"
+        style="@style/btn_default"
+        android:text="Add Retailer"
+        android:onClick="onClickBtn"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/haatPhotoSummary"
+        style="@style/blue_btn_default"
+        android:text="Haat Photo"
+        android:onClick="onClickBtn"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/haatSummary"
+        style="@style/blue_btn_default"
+        android:text="Haat Summary"
+        android:onClick="onClickBtn"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+</LinearLayout>

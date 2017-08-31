@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/txt_light"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="15dp">
+
+    <!--android:background="@drawable/list_bg_selector"-->
+            <TextView
+                android:id="@+id/shop_head"
+                android:ellipsize="end"
+                style="@style/list_txt_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="3dp"
+                android:text="@string/shop_name_list" />
+            <TextView
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:id="@+id/shop_name"
+                style="@style/list_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:text="This is shop name"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/shop_head"
+                android:layout_toEndOf="@+id/shop_head" />
+
+        <TextView
+            android:id="@+id/date_head"
+            android:ellipsize="end"
+            style="@style/list_txt_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/shop_head"
+            android:paddingBottom="3dp"
+            android:text="Sale Date : " />
+        <TextView
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:id="@+id/date"
+            style="@style/list_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:text="date"
+            android:layout_toRightOf="@+id/date_head"
+            android:layout_below="@+id/shop_name"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/check"
+
+
+            />
+    </RelativeLayout>
+
